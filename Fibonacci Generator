@@ -1,0 +1,12 @@
+def fibonacci(n):
+    fib_sequence = []
+    a, b = 0, 1
+    while len(fib_sequence) < n:
+        fib_sequence.append(a)
+        a, b = b, a + b
+    return fib_sequence
+
+# Example 
+num_terms = 10  # Change this to generate more or fewer terms
+fib_sequence = fibonacci(num_terms)
+print(f"Fibonacci sequence with {num_terms} terms: {fib_sequence}")
